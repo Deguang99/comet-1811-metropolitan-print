@@ -1,7 +1,8 @@
 # The Great Comet of 1811 in Metropolitan Serial Print: A Bibliographical Corpus, 1811–1812
 
-**Creator:** Deguang Li  
-**Version:** 1.0 release candidate (not yet deposited; 11 November 2026)  
+**Dataset DOI:** 10.5281/zenodo.24146585
+**Version:** 1.0
+**Creator:** Deguang Li, University of Cambridge
 **Scope:** 289 publication instances in 13 London/metropolitan serial titles, 30 July 1811–1 December 1812.  
 **Contents:** bibliographical metadata only; no OCR transcriptions or page images.
 
