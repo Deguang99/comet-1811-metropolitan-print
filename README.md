@@ -94,14 +94,5 @@ This is a metadata-only research release. The underlying historic works may be p
 - Several same-title/same-date records and shared BNA page URLs require item-level verification; none were automatically merged.
 - Links are supplied as recorded source pointers; some identify bound volumes or newspaper pages rather than individual articles. Link presence is not a claim that every destination has been independently tested.
 
-## Zenodo deposit preparation
-- Recommended record type: Dataset; creator: Deguang Li; version: 1.0 for the first public release (this package is a release candidate, not a published deposit).
-- Deposit the four files individually, not only a ZIP, to enable inspection. Reserve a DOI while preparing the draft, then insert the assigned DOI into the README before publication.
-- Select CC BY 4.0 only after confirming that it is appropriate for the original compilation and documentation, while retaining third-party rights qualifications in LICENSE. The repository license selection does not override third-party rights.
-- A Zenodo draft is not yet a published, citable deposit. Future material changes should normally be released as a new version with its own version DOI.
-
 ## Known limitations and future improvements
 Possible future improvements include additional page references for Gale records, closer identification of printed headings versus opening words, and item-level checks of dates and source locators. These are limitations of bibliographical precision, not indications that the 289 publication appearances were accepted without manual relevance screening.
-
-## Publication status
-This is a **pre-deposit release candidate**. No DOI has been assigned and no repository publication has occurred. The researcher should check any embedded access tokens in source URLs before public release and confirm that the platform terms permit public redistribution of the compiled metadata.
