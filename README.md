@@ -72,27 +72,12 @@ The corpus is **not** claimed as a census of all surviving metropolitan serial p
 - `context_note`: Limitations and reading guidance.
 
 ## Rights, reuse and future releases
-This is a metadata-only research release. The underlying historic works may be public domain, but database access agreements and the rights in database-derived content must be assessed separately. Do not treat the present file as permission to reproduce BNA, Gale or Google Books full-text OCR or facsimiles. The source directory entries in WDEND and DNJ are **not** republished; only limited source-attributed paraphrases are supplied. A separate rights review is underway for full-text transcriptions.
+This is a metadata-only research release. The underlying historic works may be public domain, but database access agreements and the rights in database-derived content must be assessed separately. Do not treat the present file as permission to reproduce BNA, Gale or Google Books full-text OCR or facsimiles. A separate rights review is underway for full-text transcriptions.
 
 ## Citation
-**Before DOI assignment:** Li, Deguang. *The Great Comet of 1811 in Metropolitan Serial Print: A Bibliographical Corpus, 1811–1812*. Version 1.0 (2026), release candidate. Upon publication, cite the Zenodo version DOI. The directory reference works should also be consulted and cited for specific contextual claims.
+Li, D. (2026). The Great Comet of 1811 in Metropolitan Serial Print: A Bibliographical Corpus, 1811–1812 (Version 1.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.24146585
 
 ## Bibliographical verification notes
-- The *Monthly Magazine* entry “Power, A Political Essay” (COM1811-0248) now records p. 568, supplied and verified by the researcher; the page has not been independently checked against the digitised volume.
-- Google Books volume URLs with an accidental trailing full stop were normalised (15 records); this is a URL syntax correction, not independent confirmation of live access.
 - A link may legitimately recur across multiple records: Google Books often links to a whole bound volume, and BNA links may identify a shared newspaper page. Identical URLs do not establish duplicate historical items.
-- *London Chronicle* issues were dated over ranges, and individual pages could display dates within those ranges, as confirmed by the researcher from bound volumes. Consequently, recorded dates need not coincide with the usual Tuesday/Thursday/Saturday publication days. The corpus retains the researcher-recorded dates without normalising them to issue publication days; individual date provenance (page heading versus issue range versus article dateline) has not been verified for all records.
-
-- *La Belle Assemblée* is monthly in 1811: verified by the researcher from the 1811 monthly issues, and consistent with the Wellcome Collection catalogue (https://preview.wellcomecollection.org/works/mhayfztk).
-- *London Chronicle* is thrice weekly in 1811: verified by the researcher from Google Books digitised bound volumes. The directory entry lists other frequencies for different periods, which must not be projected onto 1811.
 - The catalogue retains separate historical appearances even where publication, date and generic headings match. Such matches alone do not establish duplicate records.
-
-### Date and locator audit (internal consistency; not source-image verification)
-- 289 unique instance identifiers, 289 non-empty source links, and 13 matching serial titles.
-- 196 page locators are recorded, including p. 568 for “Power, A Political Essay” (supplied by the researcher); 93 Gale records lack page locators.
-- The 34 *London Chronicle* records include 11 dates falling on Mondays (5), Wednesdays (2) or Fridays (4). These are **not classified as errors**: the newspaper used multi-day issue ranges and individually dated pages. The stored date field is not guaranteed to represent a nominal issue-publication day. Any finer distinction requires inspection of the particular page.
-- Several same-title/same-date records and shared BNA page URLs require item-level verification; none were automatically merged.
-- Links are supplied as recorded source pointers; some identify bound volumes or newspaper pages rather than individual articles. Link presence is not a claim that every destination has been independently tested.
-
-## Known limitations and future improvements
-Possible future improvements include additional page references for Gale records, closer identification of printed headings versus opening words, and item-level checks of dates and source locators. These are limitations of bibliographical precision, not indications that the 289 publication appearances were accepted without manual relevance screening.
+- *London Chronicle* issues were dated over ranges, and individual pages could display dates within those ranges, as confirmed by the researcher from bound volumes. Consequently, recorded dates need not coincide with the usual Tuesday/Thursday/Saturday publication days. The corpus retains the researcher-recorded dates without normalising them to issue publication days; individual date provenance (page heading versus issue range versus article dateline) has not been verified for all records.
