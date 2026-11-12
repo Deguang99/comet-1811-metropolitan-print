@@ -1,21 +1,31 @@
 # The Great Comet of 1811 in Metropolitan Serial Print: A Bibliographical Corpus, 1811–1812
 
-**Dataset DOI:** 10.5281/zenodo.24146585
-**Version:** 1.0
-**Creator:** Deguang Li, University of Cambridge
-**Scope:** 289 publication instances in 13 London/metropolitan serial titles, 30 July 1811–1 December 1812.  
-**Contents:** bibliographical metadata only; no OCR transcriptions or page images.
+**Dataset DOI:** [10.5281/zenodo.24146585](https://doi.org/10.5281/zenodo.24146585)  
+**Version:** 1.0  
+**Creator:** Deguang Li, University of Cambridge  
+**Scope:** 289 publication instances in 13 London metropolitan serial titles, 30 July 1811–1 December 1812.  
+**Contents:** Bibliographical metadata only; no OCR transcriptions or page images.
+
+## Project overview
+
+This dataset accompanies research into the production, circulation and classification of cometary knowledge in early nineteenth-century metropolitan print culture. It provides a source-based foundation for investigating how different forms of knowledge, including those characterised as superstitious, were represented and contested across newspapers and periodicals. The corpus is organised bibliographically rather than according to the interpretative categories of the accompanying research, allowing the records to support other questions and approaches.
 
 ## Files
-- `corpus.csv` — one row per historical publication appearance (289 records).
-- `serials.csv` — one row per serial title, with *source-attributed and date-qualified* contextual information from the researcher's directory notes.
-- `README.md` — methodology, corpus profile, field definitions, limitations and citation guidance.
+
+- `corpus.csv` — one row per recorded historical publication instance (289 records).
+- `serials.csv` — one row per serial title, with source-attributed and date-qualified historical context.
+- `README.md` — methodology, corpus profile, field definitions, bibliographical conventions, limitations and citation guidance.
 - `LICENSE` — CC BY 4.0 scope and third-party rights qualifications.
 
 ## Collection and selection
-The researcher used an extensive search strategy intended to recover all relevant items discoverable through accessible digitised holdings, principally the British Newspaper Archive, Gale and Google Books. Search queries centred on fuzzy variants of **comet**, rather than on interpretive terms such as **superstition**. Results were manually screened to eliminate OCR false positives; inspection of related newspaper columns identified some items missed by keyword retrieval. The target is the Great Comet first observed in March 1811 (C/1811 F1), **not** the distinct comet discovered by Flaugergues in December 1811. Any mention of the target comet was eligible, including observation, correspondence, satire, religious commentary, advertising, entertainment and retrospective notices. Multiple digital records of the same appearance in the same issue were consolidated; genuine appearances in different issues or publications were retained.
 
-The corpus is **not** claimed as a census of all surviving metropolitan serial print. Uneven digitisation, OCR performance, database access and the absence of a page-by-page coverage audit limit completeness claims. The 1811–1812 dates describe *the collected records*, not a verified historical first/last mention or a documented exhaustive chronological search window.
+The researcher used an extensive search strategy intended to recover relevant items discoverable through accessible digitised holdings, principally the British Newspaper Archive, Gale and Google Books. Searches centred on variant forms of *comet*, rather than on interpretative terms such as *superstition*. Retrieved results were manually screened to exclude OCR false positives, and inspection of related newspaper columns identified additional items missed by keyword retrieval. The corpus therefore reflects an extensive, historically informed retrieval process rather than a mechanically reproducible search protocol.
+
+The target is the Great Comet first observed in March 1811 (C/1811 F1), not the distinct comet discovered by Flaugergues in December 1811. Any reference to the target comet was eligible, including observations, correspondence, satire, religious commentary, advertisements, entertainment notices and retrospective accounts.
+
+A **publication instance** denotes a distinct item or identifiable textual occurrence within a serial publication, not an entire issue or a database search result. Multiple distinct items within the same issue may therefore be recorded separately. Multiple digital records of the same historical appearance in the same issue were consolidated, while appearances in different issues or publications were retained.
+
+The corpus is **not** presented as a census of all surviving metropolitan serial print. Uneven digitisation, OCR performance, database access and the absence of a page-by-page coverage audit limit claims to completeness. The date range describes the records collected, not a verified historical first or last mention or an exhaustive chronological search window.
 
 ## Corpus profile
 
@@ -36,48 +46,64 @@ The corpus is **not** claimed as a census of all surviving metropolitan serial p
 | Anti-Gallican Monitor | 3 | 1.0% |
 | **Total** | **289** | **100%** |
 
-- Publication year: 1811 = 240; 1812 = 49.
-- Discovery/source platform recorded: Google Books = 75, British Newspaper Archive = 116, Gale = 98.
-- **196 records** have page locators; **93** have no recorded page number (all Gale). This does not establish that the original issues lacked pagination.
-- `heading_as_recorded` is an identifying label that may reproduce a printed heading, column heading or researcher-supplied opening words; it should not automatically be treated as a verbatim article title.
-- The number of corpus hits per serial is **not** an exposure-adjusted publication rate. Issue frequency, digitised coverage, search recall, genre and publication duration vary across serials. Do not infer audience size or relative public interest from these counts.
+- **Publication year:** 1811: 240 instances; 1812: 49 instances.
+- **Recorded source platform:** British Newspaper Archive: 116; Gale: 98; Google Books: 75.
+- **Page locators:** 196 records have a recorded page locator; 93 do not (all from Gale). Missing locators do not imply that the original issues were unpaginated.
 
-### Historical serial context
-`serials.csv` uses the researcher's `Workbook2.xlsx`, which compiles entries from *The Waterloo Directory of English Newspapers and Periodicals, 1800–1900* (WDEND) and the *Dictionary of Nineteenth-Century Journalism in Great Britain and Ireland* (DNJ). It reports short, paraphrased, date-qualified descriptors rather than reproducing the reference works' extensive entries. The historical descriptors are derived from the researcher’s compiled directory notes; they are not a systematic independent re-verification of every directory entry. Two publication frequencies have been separately verified by the researcher against dated issues: *La Belle Assemblée* (monthly) and *London Chronicle* (thrice weekly). The monthly frequency of *La Belle Assemblée* is also supported by the Wellcome Collection catalogue. Other ambiguous or historically varying frequencies remain qualified. Political descriptions reflect directory terminology and do not imply uniformity of all articles, writers or readers. Intended readership and observed readership are distinct; blanks indicate insufficient evidence. Circulation numbers are omitted because comparable, securely dated 1811 figures have not been established across the 13 titles.
+The number of instances per serial is **not** an exposure-adjusted publication rate. Issue frequency, digitised coverage, search recall, genre and publication duration vary between titles. These counts should not be used on their own to infer audience size or relative public interest.
+
+## Historical serial context
+
+`serials.csv` draws on the researcher's compiled notes from *The Waterloo Directory of English Newspapers and Periodicals, 1800–1900* (WDEND) and the *Dictionary of Nineteenth-Century Journalism in Great Britain and Ireland* (DNJ). It supplies short, source-attributed paraphrases rather than reproducing the reference works' entries. Descriptors retain qualifications where evidence is specific to a particular date or period, or where historical circumstances are ambiguous.
+
+Examination of dated issues establishes that *La Belle Assemblée* appeared monthly and the *London Chronicle* three times weekly in 1811. Other ambiguous or historically changing publication frequencies are qualified in `serials.csv`. Political descriptions reflect the terminology of the reference sources and do not imply uniformity across articles, contributors or readers. Evidence of an intended readership is not evidence of actual readership; blank fields indicate that the compiled sources do not provide sufficient evidence. Circulation figures are omitted because comparable, securely dated figures for 1811 have not been established across the thirteen titles.
 
 ## Data dictionary
 
 ### `corpus.csv`
-- `instance_id`: Stable local record identifier (not a repository DOI).
-- `publication_title`: Researcher-normalised serial title; link to `serials.csv` on this field.
-- `publication_date`: Date of this recorded publication appearance (ISO YYYY-MM-DD).
-- `heading_as_recorded`: Identifying heading or opening words as entered by the researcher; not necessarily a printed article title.
-- `byline_as_recorded`: Byline as recorded in source workbook.
-- `byline_descriptor_verbatim`: Unclassified suffix printed with the byline (may denote occupation, location, institution, etc.).
-- `page_as_recorded`: Page locator where recorded.
-- `source_platform`: Digital platform through which the item was recorded.
-- `source_url`: Original recorded link; not necessarily a permanent article-level URL.
+
+- `instance_id`: Stable local identifier for a publication instance (not a repository DOI).
+- `publication_title`: Researcher-normalised serial title; joins to `serials.csv` on this field.
+- `publication_date`: Date recorded for the historical appearance (ISO `YYYY-MM-DD`).
+- `heading_as_recorded`: Identifying heading or opening words entered by the researcher; not necessarily a verbatim printed article title.
+- `byline_as_recorded`: Byline as recorded in the researcher's source data.
+- `byline_descriptor_verbatim`: Descriptor recorded alongside the byline, without assigning it to a fixed category (it may refer to occupation, location, institution or another attribute).
+- `page_as_recorded`: Page locator where available.
+- `source_platform`: Digital platform through which the item was consulted or recorded.
+- `source_url`: Link to the consulted digital source, which may identify an item, newspaper page, issue or bound volume rather than an individual article.
 
 ### `serials.csv`
-- `publication_id`: Local serial ID.
+
+- `publication_id`: Local identifier for a serial title.
 - `publication_title`: Normalised title matching `corpus.csv`.
-- `instance_count`: Count of publication appearances in this corpus.
-- `directory_entry_title`: Directory headword/title (short form, as compiled by researcher).
-- `frequency_c1811`: Publication frequency near 1811 where source supports it; uncertainty explicitly noted.
-- `editorial_orientation_c1811`: Source-attributed editorial or political descriptor, not an inferred uniform party identity.
-- `intended_readership_evidence`: Only explicit intended-audience evidence; not actual audience measurement.
-- `editor_or_proprietor_c1811`: Named person only where directory note provides support.
-- `directory_source`: Reference works used by the researcher.
-- `directory_reference`: Pointer to workbook row and DNJ page where available; not a substitute for a verified bibliographical citation.
-- `context_note`: Limitations and reading guidance.
+- `instance_count`: Number of publication instances in this corpus.
+- `directory_entry_title`: Directory headword or title, as compiled in the researcher's notes.
+- `frequency_c1811`: Publication frequency around 1811 where supported by the available evidence; qualifications retained where necessary.
+- `editorial_orientation_c1811`: Source-attributed editorial or political descriptor, not a uniform party classification.
+- `intended_readership_evidence`: Evidence concerning intended readership, not a measurement of actual readership.
+- `editor_or_proprietor_c1811`: Named editor or proprietor where supported by the compiled directory information.
+- `directory_source`: Reference work or works used for the descriptor.
+- `directory_reference`: Pointer to the researcher's directory notes and, where available, a DNJ page; consult the underlying reference work for formal citation.
+- `context_note`: Historical qualifications and guidance for interpreting the entry.
+
+## Bibliographical conventions and source interpretation
+
+**Headings.** `heading_as_recorded` is an identifying label. Depending on the source, it may reproduce a printed article heading, a column heading or opening words supplied by the researcher. It should not automatically be treated as a verbatim title.
+
+**Dates.** *London Chronicle* issues carried date ranges, while individual pages could display dates within those ranges. The corpus retains dates as recorded rather than normalising them to the newspaper's usual Tuesday, Thursday and Saturday publication days. Researchers needing to distinguish precisely between issue dates, page dates and article datelines should consult the linked source volumes.
+
+**Links and repeated entries.** A source link may legitimately occur in more than one record: Google Books links may identify a bound volume, while BNA links may identify a newspaper page containing several items. Likewise, a publication, date and generic heading may coincide for distinct items. Neither identical URLs nor identical generic headings alone establish that two records are duplicates.
+
+**Page references.** Page numbers are supplied where recorded. The absence of a page locator in the dataset should not be interpreted as evidence that the historical source lacked pagination.
 
 ## Rights, reuse and future releases
-This is a metadata-only research release. The underlying historic works may be public domain, but database access agreements and the rights in database-derived content must be assessed separately. Do not treat the present file as permission to reproduce BNA, Gale or Google Books full-text OCR or facsimiles. A separate rights review is underway for full-text transcriptions.
+
+This release contains **bibliographical metadata only**. Its original compilation and documentation are provided under the terms described in `LICENSE` (CC BY 4.0, insofar as the creator holds the relevant rights). The licence does not grant rights in third-party material. Underlying historical works, digital collections and database-derived content may be subject to separate copyright, database rights or access agreements. This release does not include, or authorise redistribution of, OCR text or facsimile images from the British Newspaper Archive, Gale or Google Books.
+
+The dataset is a pilot release from a wider doctoral research corpus containing more than 1,200 primary-source entries. Future work may extend the open bibliographical metadata to that larger corpus and, subject to applicable rights and permissions, make independently prepared and checked full-text transcriptions and additional structured data available. These are prospective extensions, not contents of version 1.0.
 
 ## Citation
-Li, D. (2026). The Great Comet of 1811 in Metropolitan Serial Print: A Bibliographical Corpus, 1811–1812 (Version 1.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.24146585
 
-## Bibliographical verification notes
-- A link may legitimately recur across multiple records: Google Books often links to a whole bound volume, and BNA links may identify a shared newspaper page. Identical URLs do not establish duplicate historical items.
-- The catalogue retains separate historical appearances even where publication, date and generic headings match. Such matches alone do not establish duplicate records.
-- *London Chronicle* issues were dated over ranges, and individual pages could display dates within those ranges, as confirmed by the researcher from bound volumes. Consequently, recorded dates need not coincide with the usual Tuesday/Thursday/Saturday publication days. The corpus retains the researcher-recorded dates without normalising them to issue publication days; individual date provenance (page heading versus issue range versus article dateline) has not been verified for all records.
+Li, Deguang. 2026. *The Great Comet of 1811 in Metropolitan Serial Print: A Bibliographical Corpus, 1811–1812*. Version 1.0. Dataset. Zenodo. [https://doi.org/10.5281/zenodo.24146585](https://doi.org/10.5281/zenodo.24146585).
+
+For claims about the historical characteristics of individual serials, researchers should also consult and cite the relevant directory sources identified in `serials.csv`.
